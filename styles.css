@@ -44,6 +44,7 @@ html,body {
     object-fit: cover;
     width: 60%;
     height: calc(865px - 10vw);
+    max-height: 100vh;
     top: 15vh;
     left: 12vw;
 }
