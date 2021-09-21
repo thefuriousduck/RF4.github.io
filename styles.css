@@ -1,0 +1,104 @@
+html,body {
+    padding:0; 
+    margin:0; 
+    background-color: rgb(41, 41, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-snap-type: y mandatory;
+  }
+
+  .header {
+    padding:0; 
+    margin:0;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.section {
+    height: 150vh;
+    position: relative;
+}
+.section1 {
+}
+.section2 {
+}
+.section3 {
+}
+.divider {
+    background-color: rgb(196, 55, 55);
+    height: 2px;
+}
+
+
+
+/*_____SECTION 1_____*/
+
+.back-box1 {
+    width: 65%;
+    height: 100vh;
+    background-color: rgb(210, 138, 138);
+    position: absolute;
+}
+.front-box1 {
+    position: absolute;
+    object-fit: cover;
+    width: 60%;
+    height: calc(865px - 10vw);
+    top: 15vh;
+    left: 12vw;
+}
+.header1 {
+    float: right;
+    width: 38vw;
+    right: 15vh;
+    top: 22vh;
+}
+
+
+/*_____SECTION 2_____*/
+
+.back-box2 {
+    width: 45vw;
+    height: 100vh;
+    background-color: rgb(182, 113, 84);
+    position: absolute;
+    top: 25vh;
+    right: 0;
+}
+.front-box2 {
+    position: absolute;
+    object-fit: cover;
+    width: 40%;
+    height: 80vh;
+    top: -8vh;
+    right: calc(10vw + 30px);  
+}
+.header2 {
+    width: 35vw;
+    left: 8vh;
+    top: -22vh;
+}
+
+
+/*_____SECTION 3_____*/
+
+.back-box3 {
+    width: 45vw;
+    height: 100vh;
+    background-color: rgb(126, 151, 120);
+    position: absolute;
+    top: 0vh;
+}
+
+.front-box3 {
+    position: absolute;
+    width: 45vw;
+    top: -30vh;
+    left: 10vh;  
+}
+.header3 {
+    float: right;
+    width: 34vw;
+    right: 3vh;
+    top: -65vh;
+}
