@@ -74,13 +74,13 @@ html,body {
     object-fit: cover;
     width: 40%;
     height: 80vh;
-    top: -8vh;
+    top: -13vh;
     right: calc(10vw + 30px);  
 }
 .header2 {
     width: 35vw;
     left: 8vh;
-    top: -22vh;
+    top: -30vh;
 }
 
 
@@ -97,7 +97,8 @@ html,body {
 .front-box3 {
     position: absolute;
     width: 50vw;
-    top: -30vh;
+    height: 70vh;;
+    top: -33vh;
     left: 10vh;  
 }
 .header3 {
@@ -105,4 +106,17 @@ html,body {
     width: 34vw;
     right: 2vh;
     top: -60vh;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    /*_____SECTION 3_____*/
+    .front-box3 {
+      width: 80%;
+      left: 50%;
+      margin-left: -40%;
+      top: -20vh;
+    }
+    .header3 {
+        top: -80vh;
+    }
 }
