@@ -15,7 +15,7 @@ html,body {
 .header {
     padding:0; 
     margin:0;
-    font-size: calc(15px + 3vh);
+    font-size: calc(10px + 2vh + 0.75vw);
     color: white;
     position: relative;
     z-index: 1;
