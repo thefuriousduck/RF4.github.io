@@ -53,7 +53,7 @@ html,body {
 }
 .header1 {
     float: right;
-    width: 38vw;
+    width: 39vw;
     right: 15vh;
     top: 22vh;
 }
@@ -114,9 +114,18 @@ html,body {
     .header2 {
         left: 4vh;
     }
+    .front-box2 {
+        right: 8vw;
+        width: 45%;
+    }
 }
 
 @media (max-aspect-ratio: 1/1) {
+    /*_____SECTION 1_____*/
+    .header1 {
+        top: 15vh;
+    }
+
     /*_____SECTION 3_____*/
     .front-box3 {
       width: 80%;
