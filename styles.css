@@ -104,8 +104,16 @@ html,body {
 .header3 {
     float: right;
     width: 34vw;
-    right: 2vh;
+    right: 3vh;
     top: -60vh;
+}
+
+@media (max-aspect-ratio: 8/9) {
+    /*_____SECTION 2_____*/
+
+    .header2 {
+        left: 4vh;
+    }
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -117,6 +125,7 @@ html,body {
       top: -20vh;
     }
     .header3 {
-        top: -70vh;
+        top: -75vh;
+        right: 8vh;
     }
 }
