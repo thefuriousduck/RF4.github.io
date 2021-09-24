@@ -130,10 +130,10 @@ html,body {
     /*_____SECTION 3_____*/
     .front-box3 {
       width: 80%;
-      height: 60vh;
+      height: 50vh;
       left: 50%;
       margin-left: -40%;
-      top: -10vh;
+      top: -20vh;
     }
     .header3 {
         top: -75vh;
