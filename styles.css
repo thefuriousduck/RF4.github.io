@@ -72,13 +72,13 @@ html,body {
     object-fit: cover;
     width: 40%;
     height: 80vh;
-    top: -13vh;
+    top: calc(15vh - 275px);
     right: calc(10vw + 30px);  
 }
 .header2 {
     width: 35vw;
     left: 8vh;
-    top: -30vh;
+    top: calc(10vh - 350px);
 }
 
 
@@ -95,14 +95,14 @@ html,body {
     position: absolute;
     width: 50vw;
     height: 70vh;;
-    top: -33vh;
+    top: calc(10vh - 350px);
     left: 10vh;  
 }
 .header3 {
     float: right;
     width: 34vw;
     right: 3vh;
-    top: -60vh;
+    top: calc(10vh - 600px);
 }
 
 @media (max-aspect-ratio: 8/9) {
@@ -130,10 +130,10 @@ html,body {
       height: 50vh;
       left: 50%;
       margin-left: -40%;
-      top: -10vh;
+      top: -20vh;
     }
     .header3 {
-        top: -75vh;
+        top: calc(5vh - 700px);
         right: 8vh;
     }
 }
