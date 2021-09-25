@@ -130,7 +130,7 @@ html,body {
       height: 50vh;
       left: 50%;
       margin-left: -40%;
-      top: -20vh;
+      top: calc(50vh - 550px);
     }
     .header3 {
         top: calc(5vh - 700px);
