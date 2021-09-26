@@ -2,7 +2,7 @@ html,body {
     padding:0; 
     margin:0; 
     background-color: rgb(41, 41, 41);
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Lato, Arial, Helvetica, sans-serif;    
     scroll-snap-type: y proximity;
 }
 
@@ -15,18 +15,16 @@ html,body {
     scroll-snap-align: start;
 }
 
+
 .header {
     padding:0; 
     margin:0;
     font-size: calc(10px + 2vh + 0.75vw);
     color: white;
     position: relative;
-    z-index: 1;
+    padding-bottom: 5vh;
 }
-.paragraph {
-    color: white;
-    
-}
+
 
 .section1 {
 }
@@ -34,12 +32,12 @@ html,body {
 }
 .section3 {
 }
-
+/*
 .divider {
     background-color: rgb(196, 55, 55);
     height: 2px;   
 }
-
+*/
 
 
 /*_____SECTION 1_____*/
@@ -59,7 +57,7 @@ html,body {
 }
 .header1 {
     float: right;
-    width: 42vw;
+    width: 40vw;
     right: 5vh;
     top: 22vh;
 }
@@ -82,13 +80,21 @@ html,body {
     top: calc(15vh - 275px);
     right: calc(10vw + 30px);  
 }
-.header2 {
+.info2 {
+    height: 70vh; 
     width: 35vw;
-    height: 70vh;
-    right: -15vh;
+    right: -10vh;
     top: calc(25vh - 350px);
+    position: relative;
 }
-
+.header2 {
+    
+}
+.paragraph2 {
+    color: white;
+    font-size: calc(2px + 1.5vh + 0.75vw);
+    font-weight: 100;
+}
 
 /*_____SECTION 3_____*/
 .back-box3 {
@@ -106,18 +112,23 @@ html,body {
     top: calc(10vh - 350px);
     left: 10vh;  
 }
-.header3 {
+.info3 {
     float: right;
     width: 34vw;
     right: 3vh;
-    top: calc(10vh - 600px);
+    top: calc(30vh - 600px);
+    position: relative;
 }
-
-@media (max-aspect-ratio: 8/9) {
-    /*_____SECTION 2_____*/
-
-  
+.paragraph3 {
+    
 }
+.paragraph3 {
+    color: white;
+    font-size: calc(2px + 1.5vh + 0.75vw);
+    font-weight: 100;
+  }
+
+
 
 @media (max-aspect-ratio: 1/1) {
     /*_____SECTION 1_____*/
@@ -125,14 +136,13 @@ html,body {
         top: 15vh;
         right: 15vh;
     }
-    .header2 {
-        left: 2vh;
-        width: 50vw;
-    }
-    .front-box2 {
-        right: 8vw;
+
+    /*_____SECTION 2_____*/
+    .info2 {
+        left: 3vw;
         width: 45%;
     }
+
     /*_____SECTION 3_____*/
     .front-box3 {
       width: 80%;
@@ -141,8 +151,10 @@ html,body {
       margin-left: -40%;
       top: calc(50vh - 550px);
     }
-    .header3 {
-        top: calc(5vh - 700px);
-        right: 8vh;
+    .info3 {
+        width: 40vw;
+        float: left;
+        left: 50vw;
+        top: calc(5vh - 600px);
     }
 }
