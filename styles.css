@@ -2,16 +2,19 @@ html,body {
     padding:0; 
     margin:0; 
     background-color: rgb(41, 41, 41);
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    font-family: Arial, Helvetica, sans-serif;    
+    scroll-snap-type: y proximity;
+}
 
 .section {
     height: 150vh;
     position: relative;
     
 }
-.section1 {
+.back {
+    scroll-snap-align: start;
 }
+
 .header {
     padding:0; 
     margin:0;
@@ -20,19 +23,23 @@ html,body {
     position: relative;
     z-index: 1;
 }
+.paragraph {
+    color: white;
+    
+}
 
-
-
+.section1 {
+}
 .section2 {
 }
 .section3 {
 }
-/*
+
 .divider {
     background-color: rgb(196, 55, 55);
-    height: 2px;
+    height: 2px;   
 }
-*/
+
 
 
 /*_____SECTION 1_____*/
@@ -64,7 +71,7 @@ html,body {
     height: 100vh;
     background-color: rgb(182, 113, 84);
     position: absolute;
-    top: 25vh;
+    top: 5vh;
     right: 0;
 }
 .front-box2 {
@@ -77,8 +84,9 @@ html,body {
 }
 .header2 {
     width: 35vw;
-    left: 8vh;
-    top: calc(10vh - 350px);
+    height: 70vh;
+    right: -15vh;
+    top: calc(25vh - 350px);
 }
 
 
@@ -88,7 +96,7 @@ html,body {
     height: 100vh;
     background-color: rgb(126, 151, 120);
     position: absolute;
-    top: 0vh;
+    top: 20vh;
 }
 
 .front-box3 {
@@ -108,13 +116,7 @@ html,body {
 @media (max-aspect-ratio: 8/9) {
     /*_____SECTION 2_____*/
 
-    .header2 {
-        left: 4vh;
-    }
-    .front-box2 {
-        right: 8vw;
-        width: 45%;
-    }
+  
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -123,7 +125,14 @@ html,body {
         top: 15vh;
         right: 15vh;
     }
-
+    .header2 {
+        left: 2vh;
+        width: 50vw;
+    }
+    .front-box2 {
+        right: 8vw;
+        width: 45%;
+    }
     /*_____SECTION 3_____*/
     .front-box3 {
       width: 80%;
