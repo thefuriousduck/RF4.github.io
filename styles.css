@@ -2,7 +2,7 @@ html,body {
     padding:0; 
     margin:0; 
     background-color: rgb(41, 41, 41);
-    font-family: Lato, Arial, Helvetica, sans-serif;    
+    font-family: 'Lato', sans-serif;    
     scroll-snap-type: y proximity;
 }
 
@@ -12,7 +12,7 @@ html,body {
     
 }
 .back {
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
 
@@ -50,7 +50,7 @@ html,body {
 .front-box1 {
     position: absolute;
     object-fit: cover;
-    width: 60%;
+    width: 60vw;
     height: 70vh;
     top: 15vh;
     left: 12vw;
@@ -93,7 +93,10 @@ html,body {
 .paragraph2 {
     color: white;
     font-size: calc(2px + 1.5vh + 0.75vw);
-    font-weight: 100;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    position: relative;
+    top: -5vh;
 }
 
 /*_____SECTION 3_____*/
@@ -120,12 +123,10 @@ html,body {
     position: relative;
 }
 .paragraph3 {
-    
-}
-.paragraph3 {
     color: white;
     font-size: calc(2px + 1.5vh + 0.75vw);
-    font-weight: 100;
+    font-weight: 400;
+    letter-spacing: 0.025em;
   }
 
 
@@ -140,7 +141,7 @@ html,body {
     /*_____SECTION 2_____*/
     .info2 {
         left: 3vw;
-        width: 45%;
+        width: 35vw;
     }
 
     /*_____SECTION 3_____*/
@@ -155,6 +156,48 @@ html,body {
         width: 40vw;
         float: left;
         left: 50vw;
-        top: calc(5vh - 600px);
+        top: calc(6vh - 600px);
+    }
+}
+
+@media (max-aspect-ratio: 2/3) {
+    /*_____SECTION 1_____*/
+    .back-box1 {
+        width: 100%;
+        top: 50vh;
+        height: 50vh;
+    }
+    .front-box1 {
+        width: 100%;
+        height: 40vh;
+        top: 55vh;
+        left: 0;
+    }
+    .header1 {
+        width: 90vw;
+        float: left;
+        left: 3vh;
+        top: 7.5vh;
+    }
+
+    /*_____SECTION 2_____*/
+    .back-box2 {
+        height: 50vh;
+        width: 100vw;
+        top: 65vh;
+    }
+    .front-box2 {
+        width: 100vw;
+        height: 40vh;
+        right: 0;
+        top: calc(57.5vh - 275px)
+    }
+    .info2 {
+        top: calc(17.5vh - 350px);
+        width: 90vw;
+        height: 42.5vh;
+    }
+    .paragraph2 {
+        font-size: calc(3px + 2vh + 0.75vw);
     }
 }
