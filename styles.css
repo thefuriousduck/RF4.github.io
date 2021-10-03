@@ -85,7 +85,7 @@ p {
     text-decoration: none;
     display: inline-block;
 
-    font-size: 2.5em;
+    font-size: calc(10px + 3vh + 1vw);
     font-weight: 900;
     cursor: pointer;
     width: 35vh;
