@@ -45,7 +45,7 @@ html,body {
 .headerbox1 {
     position: relative;
     left: 10vw;
-    top: 12.5vh;
+    top: 7.5vh;
     display: inline-block;
 }
 .subhead1 {
@@ -70,7 +70,7 @@ p {
     left: calc(50% - 17.5vh);
     width: 35vh;
     height: auto;
-    top: 17.5vh;
+    top: 15vh;
 }
 .icon {
     max-width: 100%;
@@ -91,11 +91,11 @@ p {
     width: 35vh;
     padding: 15px 0;
     left: calc(50% - 17.5vh);
-    top: 25vh;
+    top: 22vh;
 }
 
 .about-text {
-    padding-top: 10vh;
+    padding-top: 5vh;
     width: 80vw;
     
 }
