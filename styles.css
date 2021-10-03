@@ -5,9 +5,14 @@ html,body {
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden; 
+    scroll-snap-type: y proximity;
 }
-
-
+body {
+    
+}
+.all-sections section {
+    scroll-snap-align: start;
+}
 .logo1 {
     position: relative;
     top: 3vh;
@@ -15,6 +20,8 @@ html,body {
     margin: 0;
     padding: 0;
     width: calc(150px + 5vw);
+    
+    
 }
 .logo {
     width: calc(150px + 5vw);
@@ -27,6 +34,7 @@ html,body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 .header {
     position: relative;
@@ -145,7 +153,7 @@ p {
     background-size: cover;
     width: 300px;
     height: 300px;
-    background-color: rgb(72, 77, 104);
+    background-color: rgb(83, 88, 119);
 }
 
 .swiper-slide img {
