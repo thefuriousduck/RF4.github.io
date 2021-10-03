@@ -101,8 +101,8 @@ p {
 }
 .hero2 {
     position: relative;
-    left: calc(50% - 17.5vh);
-    width: 30vh;
+    left: 4vw;
+    width: 70vw;
     height: auto;
     bottom: 0vh;
 }
