@@ -1,76 +1,200 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIGMA STEP 1</title>
+    <title>RF 4.0</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="swiper-bundle.min.css"/>
 </head>
-
 <body>
+    <section id="Home" class="section">
 
-<div class="all-sections">
-    <!--________SECTION 1________-->
-    <section class="section section1">
-        <div class="back back-box1"></div>
-        <img src="front-box1.PNG" alt="Front Box 1" class="rellax front-box1" data-rellax-speed="-3">
-        <div class="rellax header header1" data-rellax-speed="-5">
-            <h1>Custom-made upholstered furniture</h1>
+        <div class="logo1">
+            <img src="logo_white.png" alt="Ruutform Logo" class="logo">
         </div>
-        <a href="#" class="button1">CONTACT</a>
-    </section>
 
-    <div class="divider"></div>
-    <!--________SECTION 2________-->
-    <section class="section section2">
-        <div class="back back-box2"></div>
-        <img src="front-box2.PNG" alt="Front Box 2" class="rellax front-box2" data-rellax-speed="-3">
-        <div class="rellax info2" data-rellax-speed="-3">
-            <div class="header header2">
-                <h1>About us</h1>
+        <div class="headerbox1">
+            <div class="header">
+                <h1 data-aos="zoom-in-right">Custom made</h1>
+                <div class="underline" data-aos="fade-right" data-aos-delay="300" data-aos-duration="300" ></div>
             </div>
-            <div class="paragraph2">
-                <p>We make upholstered furniture of any complexity to order</p>
-                <p>20 years of experience</p>
-                <p>Providing services for private clients, design firms, hospitality industry</p>
+
+            <div class="header">
+                <h1 data-aos="zoom-in-right" data-aos-delay="50">Upholstered</h1>
+                <div class="underline" data-aos="fade-right" data-aos-delay="350" data-aos-duration="300"></div>
+            </div>
+
+            <div class="header">
+               <h1 data-aos="zoom-in-right" data-aos-delay="100">Furniture</h1>
+                <div class="underline" data-aos="fade-right" data-aos-delay="400" data-aos-duration="300"></div>
+            </div>
+            <div class="subhead1">
+                <p data-aos="fade-right" data-aos-delay="300">For private clients, design firms, hospitality industry</p>
             </div>
         </div>
-        
+
+        <div class="hero1">
+            <img src="4pcs.PNG" alt="Sofa Icon" class="icon">
+        </div>
+
+        <a class="button1" href="#Contact">CONTACT</a>
     </section>
 
-    <div class="divider"></div>
-    <!--________SECTION 3________-->
-    <section class="section section3">
-        <div class="back back-box3"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4181.373421524577!2d24.488164866534454!3d58.398682455839854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ecfd4649d3bcaf%3A0x8a0ebc0b30b98be3!2sRuutform%20O%C3%9C!5e0!3m2!1sen!2see!4v1631955897598!5m2!1sen!2see" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" class="rellax front-box3" data-rellax-speed="-3"></iframe>
-        <div class="rellax info3" data-rellax-speed="-3">
-            <div class="header header3">
-                <h1>Contact</h1>
-            </div>
-            <div id = "divToShowHide" class="paragraph3 BeforeScroll">
-                <p>[#] info@ruutform.com</p>
-                <p>[#] +37255854858</p>
-                <p>[#] Lubja 48a, Parnu, 80033</p>
+
+
+
+    <section id="About" class="section">
+
+        <div class="logo1">
+            <img src="logo_white.png" alt="Ruutform Logo" class="logo">
+        </div>
+
+            <div class="headerbox1">
+                <div class="header" data-aos="fade-right">
+                    <h1> About us</h1>
+                    <div class="underline" data-aos="fade-right" data-aos-delay="300" data-aos-duration="300"></div>
+                </div>
+
+                <div class="about-text">
+                    <p data-aos="fade-right" data-aos-delay="100">We make upholstered furniture of any complexity to order</p>
+                    <p data-aos="fade-right" data-aos-delay="150">20 years of experience</p>
+                    <p data-aos="fade-right" data-aos-delay="200">Providing services to private clients, design firms, hospitality industry</p>
+                </div>
+
+                <div class="hero2">
+                    <img src="sofa1.PNG" alt="Sofa Icon" class="icon">
+                </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="Projects" class="section">
+        <div class="logo1">
+            <img src="logo_white.png" alt="Ruutform Logo" class="logo">
+        </div>
+
+        <div class="headerbox1">
+            <div class="header" data-aos="fade-right">
+                <h1> Projects</h1>
+                <div class="underline" data-aos="fade-right" data-aos-delay="300" data-aos-duration="300"></div>
             </div>
         </div>
-        
 
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="blue-armchair2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="yellow-armchair.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="blue-armchair.jpg" />
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+
+
+
+    <section id="Contact" class="section">
+
+        <div class="logo1">
+            <img src="logo_white.png" alt="Ruutform Logo" class="logo">
+        </div>
+
+        <div class="headerbox1">
+            <div class="header" data-aos="fade-right">
+                <h1> Contact</h1>
+                <div class="underline" data-aos="fade-right" data-aos-delay="300" data-aos-duration="300"></div>
+            </div>
+
+            <div class="contact-text">
+                <p data-aos="fade-right" data-aos-delay="100">info@ruutform.com
+                </p>
+                <p data-aos="fade-right" data-aos-delay="150">+372 55843591</p>
+                <p data-aos="fade-right" data-aos-delay="200">Lubja 48a, 80033 Parnu, Estonia</p>
+            </div>
+        </div>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16725.439713494456!2d24.46691817203924!3d58.39879620767022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ecfd4649d3bcaf%3A0x8a0ebc0b30b98be3!2sRuutform%20O%C3%9C!5e0!3m2!1sen!2see!4v1633211122795!5m2!1sen!2see" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe> 
 
     </section>
-</div>
 
 
-    <script src="rellax.min.js"></script>
-    <script> 
-        const rellax = new Rellax('.rellax'); 
+
+
+    <section id="Get" class="section">
+
+        <div class="logo1">
+            <img src="logo_white.png" alt="Ruutform Logo" class="logo">
+        </div>
+
+        <div class="headerbox1">
+            <div class="header" data-aos="fade-right">
+                <h1> Get in touch</h1>
+                <div class="underline" data-aos="fade-right" data-aos-delay="300" data-aos-duration="300"></div>
+            </div>
+
+            <div class="get-text">
+                <p data-aos="fade-right" data-aos-delay="200">Tell us what we can do for you
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {el: '.swiper-pagination',},
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
-
-
-
 </body>
 </html>
