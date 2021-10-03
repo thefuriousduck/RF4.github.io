@@ -134,11 +134,10 @@ p {
 }
 
 .swiper {
-    background-color: rgb(54, 61, 71);
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    top: 30vh;
+    top: 12.5vh;
 }
 
 .swiper-slide {
@@ -146,6 +145,7 @@ p {
     background-size: cover;
     width: 300px;
     height: 300px;
+    background-color: rgb(72, 77, 104);
 }
 
 .swiper-slide img {
@@ -153,4 +153,14 @@ p {
     object-fit: cover;
     width: 100%;
     height: 60vh;
+}
+
+.project-text {
+    margin: 1vh 10vw;
+}
+.swiper-wrapper h2 {
+    color: white;
+    font-weight: 400;
+    margin: 0 0;
+    padding: 0 0;
 }
