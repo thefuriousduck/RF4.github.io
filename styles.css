@@ -118,7 +118,7 @@ p {
 
 .contact-text {
     margin-top: 5vh;
-    
+    line-height: 1;
     width: 80vw;
 }
 
