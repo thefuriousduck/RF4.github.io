@@ -5,10 +5,9 @@ html,body {
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden; 
-    scroll-snap-type: y proximity;
 }
 body {
-    
+    scroll-snap-type: y proximity;
 }
 .all-sections section {
     scroll-snap-align: start;
@@ -20,44 +19,33 @@ body {
     margin: 0;
     padding: 0;
     width: calc(150px + 5vw);
-    
-    
 }
 .logo {
     width: calc(150px + 5vw);
     margin: 0;
     padding: 0;
 }
-
 .section {
     height: 100vh;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 .header {
     position: relative;
     width: max-content;
-    z-index: 4;
-
 }
-
 .underline {
     position: relative;
     background-color: #f05323;
     height: 6px;
     top: 1.5px;
-    z-index: 1;
 }
 .headerbox1 {
     position: relative;
     left: 10vw;
     top: 7.5vh;
     display: inline-block;
-}
-.subhead1 {
-    width: 80vw;
 }
 h1 {
     color: white;
@@ -66,12 +54,19 @@ h1 {
     font-size: calc(10px + 4vh + 2vw);
     line-height: 0.8;
 }
+.word {
+    z-index: 200;
+}
 p {
     color: white;
     font-size: calc(10px + 1.5vh + 1vw);
     margin: 10px 0;
 }
 
+
+.subhead1 {
+    width: 80vw;
+}
 .hero1 {
     position: relative;
     object-fit: cover;
@@ -172,3 +167,10 @@ p {
     margin: 0 0;
     padding: 0 0;
 }
+
+@media (min-aspect-ratio: 3/4) {
+    body {
+      background: green;
+    }
+  }
+
