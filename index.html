@@ -26,7 +26,7 @@
             <img src="logo_white.png" alt="Ruutform Logo" class="logo">
         </div>
 
-        <div class="headerbox1">
+        <div class="headerbox1 home-header">
             <div class="cover"></div>
 
             <div class="header">
@@ -68,7 +68,7 @@
             <img src="logo_white.png" alt="Ruutform Logo" class="logo">
         </div>
 
-            <div class="headerbox1">
+            <div class="headerbox1 about-header">
                 <div class="header" data-aos-duration="500" data-aos="fade-right">
                     <h1> About us</h1>
                     <div class="underline" data-aos="flip-right" data-aos-delay="300" data-aos-duration="700"></div>
@@ -82,6 +82,7 @@
 
                 <div class="hero2">
                     <img src="sofa1.png" alt="Sofa Icon" class="icon">
+                    <img src="sofa2.png" alt="Sofa Icon" class="icon sofa2">
                 </div>
         </div>
     </section>
@@ -95,7 +96,7 @@
         </div>
 
         <div class="headerbox1">
-            <div class="header" data-aos-duration="500" data-aos="fade-right">
+            <div class="header projects-header" data-aos-duration="500" data-aos="fade-right">
                 <h1> Projects</h1>
                 <div class="underline" data-aos="flip-right" data-aos-delay="300" data-aos-duration="700"></div>
             </div>
@@ -146,7 +147,7 @@
         </div>
 
         <div class="headerbox1">
-            <div class="header" data-aos-duration="500" data-aos="fade-right">
+            <div class="header contact-header" data-aos-duration="500" data-aos="fade-right">
                 <h1> Contact</h1>
                 <div class="underline" data-aos="flip-right" data-aos-delay="300" data-aos-duration="700"></div>
             </div>
@@ -155,7 +156,7 @@
                 <p data-aos="fade-right" data-aos-delay="300">info@ruutform.com
                 </p>
                 <p data-aos="fade-right" data-aos-delay="400">+372 55843591</p>
-                <p data-aos="fade-right" data-aos-delay="500">Lubja 48a, 80033 Parnu, Estonia</p>
+                <p data-aos="fade-right" data-aos-delay="500">Lubja 48a, 80033 <br>Parnu, Estonia</p>
             </div>
         </div>
     
@@ -172,7 +173,7 @@
             <img src="logo_white.png" alt="Ruutform Logo" class="logo">
         </div>
 
-        <div class="headerbox1">
+        <div class="headerbox1  get-header">
             <div class="header" data-aos-duration="500" data-aos="fade-right">
                 <h1> Get in touch</h1>
                 <div class="underline" data-aos="flip-right" data-aos-delay="300" data-aos-duration="700"></div>
@@ -184,6 +185,18 @@
             </div>
         </div>
 
+        <div class="get-column">
+            <form action="/action_page.php">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">E-mail address:</label><br>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" style="height:170px"></textarea>
+                <input type="submit" value="SEND">
+              </form>
+        </div>
+        <img src="chair.png" alt="Chair" class="chair">
     </section>
     </div>
 
@@ -206,19 +219,50 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-        },
-        loop: true,
+            spaceBetween: 80,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 1,
+
+            breakpoints: {
+               '@0.75': {
+                  slidesPerView: 1.1,
+                  spaceBetween: 200,
+                },
+                '@0.8': {
+                    slidesPerView: 1.2,
+                },
+                '@1': {
+                    slidesPerView: 1.5,
+                    spaceBetween: 100,
+                },
+                '@1.3': {
+                    slidesPerView: 2,
+                    spaceBetween: 100,
+                },
+                '@1.5': {
+                    slidesPerView: 2.1,
+                    spaceBetween: 200,
+                },
+                '@1.75': {
+                    slidesPerView: 2.25,
+                    spaceBetween: 300,
+                },
+                '@2': {
+                    slidesPerView: 2.4,
+                    spaceBetween: 350,
+                }
+            },
+            speed: 500,
+            coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+            },
+            loop: true,
 
         // If we need pagination
         pagination: {el: '.swiper-pagination',},
@@ -228,6 +272,7 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             },
+        
         });
     </script>
 
