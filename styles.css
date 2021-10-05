@@ -135,6 +135,7 @@ p {
 }
 .get-text {
     margin-top: -0.5vh;
+    width: 80vw;
 }
 
 .swiper {
