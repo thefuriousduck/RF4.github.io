@@ -4,10 +4,10 @@ html,body {
     background-color: rgb(58, 61, 76);
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden; 
+    scroll-snap-type: y mandatory;
 }
 body {
-    scroll-snap-type: y proximity;
+
 }
 .all-sections section {
     scroll-snap-align: start;
